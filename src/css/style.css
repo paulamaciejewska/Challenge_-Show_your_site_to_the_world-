@@ -3,7 +3,7 @@
 body{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
-    color: #8c8c8c;
+    color: #222b21;
 }
 
 * {
@@ -60,4 +60,74 @@ nav ul ul{
     text-align: center;
     width: 100%;
     border: 1px solid #ffffff;
+    display: none;
+}
+nav ul ul li{ 
+    display: block; 
+}
+
+nav ul ul li a{ 
+    padding: 0 15px; 
+}
+nav ul li:hover >ul{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.hero-section{
+    background-image: url(https://images.unsplash.com/photo-1545949139-bb90937876ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slogan{
+    width: 80%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.slogan h2{
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+
+}
+
+.slogan h2 span{
+    color: #578bb6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about-section h2 {
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.about-section img {
+    margin: 10px auto 30px;
+    display: block;
+}
+
+.about-section {
+    width: 100%;
+    background-color: #6497a3;
 }
